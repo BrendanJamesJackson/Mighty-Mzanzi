@@ -17,22 +17,22 @@ public class player_movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(0))
+        /*if (Input.GetMouseButton(0))
         {
             Jump();
         }
         else if (Input.GetMouseButtonUp(0))
         {
             player_rb.velocity *= 0.25f;
-        }
+        }*/
     }
 
-    void Jump()
+    public void Jump()
     {
         player_rb.AddForce(new Vector2(0, jump_force), ForceMode2D.Force);
     }
 
-    void Fly()
+    public void Fly()
     {
 
     }
