@@ -29,7 +29,7 @@ public class input_manager : MonoBehaviour
         }
         if (Right_Input_Pressed)
         {
-            ps_script.Shoot();
+           // ps_script.Shoot();
         }
     }
 
@@ -48,6 +48,7 @@ public class input_manager : MonoBehaviour
 
     public void RightDown()
     {
+        ps_script.Shoot();
         Right_Input_Pressed = true;
     }
 
