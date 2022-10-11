@@ -4,20 +4,20 @@ OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'en' Physical Memory: 16177 
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2021.3.11f1\Editor\Unity.exe
+D:\Programs\UnityVersions\2021.3.11f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker1
 -projectPath
-D:/Penrose/Mighty-Mzanzi/Mighty Mzanzi
+D:/Mighty Mzanzi/Mighty-Mzanzi/Mighty Mzanzi
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-51293
-Successfully changed project path to: D:/Penrose/Mighty-Mzanzi/Mighty Mzanzi
-D:/Penrose/Mighty-Mzanzi/Mighty Mzanzi
+4262
+Successfully changed project path to: D:/Mighty Mzanzi/Mighty-Mzanzi/Mighty Mzanzi
+D:/Mighty Mzanzi/Mighty-Mzanzi/Mighty Mzanzi
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,11 +47,11 @@ D:/Penrose/Mighty-Mzanzi/Mighty Mzanzi
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 91.15 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 89.92 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.11f1 (0a5ca18544bf)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Penrose/Mighty-Mzanzi/Mighty Mzanzi/Assets
+[Subsystems] Discovering subsystems at path D:/Programs/UnityVersions/2021.3.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Mighty Mzanzi/Mighty-Mzanzi/Mighty Mzanzi/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -60,95 +60,95 @@ Direct3D:
     VRAM:     4018 MB
     Driver:   27.21.14.6231
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56072
+Mono path[0] = 'D:/Programs/UnityVersions/2021.3.11f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Programs/UnityVersions/2021.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Programs/UnityVersions/2021.3.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56092
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.009669 seconds.
+Register platform support module: D:/Programs/UnityVersions/2021.3.11f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/Programs/UnityVersions/2021.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003835 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 88.50 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 94.20 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.647 seconds
+- Completed reload, in  0.704 seconds
 Domain Reload Profiling:
-	ReloadAssembly (648ms)
-		BeginReloadAssembly (77ms)
+	ReloadAssembly (705ms)
+		BeginReloadAssembly (73ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (456ms)
-			LoadAssemblies (74ms)
+		EndReloadAssembly (498ms)
+			LoadAssemblies (73ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (106ms)
+			SetupTypeCache (126ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (264ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (284ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (89ms)
+				RefreshPlugins (94ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (119ms)
-				ProcessInitializeOnLoadMethodAttributes (45ms)
+				ProcessInitializeOnLoadAttributes (128ms)
+				ProcessInitializeOnLoadMethodAttributes (52ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005347 seconds.
+Registered in 0.005585 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Penrose\Mighty-Mzanzi\Mighty Mzanzi\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Penrose\Mighty-Mzanzi\Mighty Mzanzi\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image D:\Mighty Mzanzi\Mighty-Mzanzi\Mighty Mzanzi\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Mighty Mzanzi\Mighty-Mzanzi\Mighty Mzanzi\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 93.60 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 91.45 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.169 seconds
+- Completed reload, in  1.167 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1170ms)
-		BeginReloadAssembly (123ms)
+	ReloadAssembly (1168ms)
+		BeginReloadAssembly (113ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (21ms)
-		EndReloadAssembly (924ms)
-			LoadAssemblies (87ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (937ms)
+			LoadAssemblies (90ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (245ms)
+			SetupTypeCache (257ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (56ms)
-			SetupLoadedEditorAssemblies (496ms)
+			RebuildScriptCaches (61ms)
+			SetupLoadedEditorAssemblies (478ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (94ms)
-				BeforeProcessingInitializeOnLoad (103ms)
-				ProcessInitializeOnLoadAttributes (242ms)
-				ProcessInitializeOnLoadMethodAttributes (42ms)
-				AfterProcessingInitializeOnLoad (9ms)
+				RefreshPlugins (92ms)
+				BeforeProcessingInitializeOnLoad (97ms)
+				ProcessInitializeOnLoadAttributes (237ms)
+				ProcessInitializeOnLoadMethodAttributes (44ms)
+				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.68 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.17 seconds
+Refreshing native plugins compatible for Editor in 0.72 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4076 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 38 unused Assets / (56.1 KB). Loaded Objects now: 4533.
-Memory consumption went from 151.5 MB to 151.5 MB.
-Total: 3.990300 ms (FindLiveObjects: 0.351300 ms CreateObjectMapping: 0.212100 ms MarkObjects: 3.349800 ms  DeleteObjects: 0.076200 ms)
+Memory consumption went from 151.5 MB to 151.4 MB.
+Total: 3.876800 ms (FindLiveObjects: 0.345000 ms CreateObjectMapping: 0.227100 ms MarkObjects: 3.226600 ms  DeleteObjects: 0.077300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -162,60 +162,44 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005199 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Penrose\Mighty-Mzanzi\Mighty Mzanzi\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Penrose\Mighty-Mzanzi\Mighty Mzanzi\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.00 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.307 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1307ms)
-		BeginReloadAssembly (142ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (38ms)
-		EndReloadAssembly (1044ms)
-			LoadAssemblies (94ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (333ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (72ms)
-			SetupLoadedEditorAssemblies (462ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (20ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (97ms)
-				ProcessInitializeOnLoadAttributes (277ms)
-				ProcessInitializeOnLoadMethodAttributes (56ms)
-				AfterProcessingInitializeOnLoad (11ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (15ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.34 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4065 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 25 unused Assets / (24.6 KB). Loaded Objects now: 4536.
-Memory consumption went from 150.9 MB to 150.8 MB.
-Total: 4.971000 ms (FindLiveObjects: 0.764400 ms CreateObjectMapping: 0.347500 ms MarkObjects: 3.717500 ms  DeleteObjects: 0.139600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 751517.685867 seconds.
+  path: Assets/Sprites/Background
+  artifactKey: Guid(295e530a27d23ff4181c8fab304f58db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Background using Guid(295e530a27d23ff4181c8fab304f58db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb2f87b5f5dbe98111fc9d6bf9045539') in 0.010701 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/Background/Backgrounds.zip
+  artifactKey: Guid(5620a0351416bbd49b2a5322c096bbf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Background/Backgrounds.zip using Guid(5620a0351416bbd49b2a5322c096bbf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4490d67896c27aabf5e8ebb76b3f129') in 0.051277 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/Game_Layout.png
+  artifactKey: Guid(a8edd41d7d1811645a8c75616d646964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Game_Layout.png using Guid(a8edd41d7d1811645a8c75616d646964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4d79716559344fb73dc0f62e5073afe') in 0.378923 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 39.399263 seconds.
+  path: Assets/Sprites/Background/CBD-IND-Layer_03 Parallax.png
+  artifactKey: Guid(7d5cc8b80d20b5b4fa6492213f64c51d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Background/CBD-IND-Layer_03 Parallax.png using Guid(7d5cc8b80d20b5b4fa6492213f64c51d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6f9e6e161d7664d61ea3128bea05f72') in 0.164792 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/Background/CBD_01-Layer_03 Parallax.png
+  artifactKey: Guid(a8490c32619c8dc419b50eadb50f9505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Background/CBD_01-Layer_03 Parallax.png using Guid(a8490c32619c8dc419b50eadb50f9505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47223383039c03dc571fddb9c683df90') in 0.051221 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/Sprites/Background/Layers.png
+  artifactKey: Guid(087e82b2902ba104ba44edb2472c1e77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Background/Layers.png using Guid(087e82b2902ba104ba44edb2472c1e77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f50f3946d02ec06fee40bc735cdb9c55') in 0.098893 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Sprites/Background/Sky_Option_01.png
+  artifactKey: Guid(3b32e8809117ba84ba5a8d427899f4b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Background/Sky_Option_01.png using Guid(3b32e8809117ba84ba5a8d427899f4b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7a109bb3414a0edd2b24384b934ef5b') in 0.094951 seconds 
