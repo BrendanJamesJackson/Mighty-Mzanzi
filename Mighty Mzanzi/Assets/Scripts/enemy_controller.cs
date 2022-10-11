@@ -17,14 +17,6 @@ public class enemy_controller : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Bullet")
-        {
-            enemyDie();
-        }
-    }
-
     public void enemyDie()
     {
         //particle effect
