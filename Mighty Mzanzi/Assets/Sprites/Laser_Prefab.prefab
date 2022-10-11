@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7621834003090821370}
   m_Layer: 0
   m_Name: Laser_Prefab
-  m_TagString: Untagged
+  m_TagString: laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74,10 +74,10 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 142281449
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -9095717837082945937, guid: f2a0c3954b29aa149bbfab1b98516d6a, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.7988266, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -136,4 +136,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018069270c67e444fbbc8e61e422500d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gm_script: {fileID: 0}
   laser_speed: 10
+  laser_strength: 1

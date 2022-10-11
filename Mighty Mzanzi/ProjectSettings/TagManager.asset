@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - laser
+  - GameManager
   layers:
   - Default
   - TransparentFX
@@ -44,9 +47,15 @@ TagManager:
   - name: Background
     uniqueID: 137901441
     locked: 0
+  - name: Transitional Parallax
+    uniqueID: 4282237975
+    locked: 0
   - name: Midground
     uniqueID: 3797391241
     locked: 0
   - name: Foreground
     uniqueID: 142281449
+    locked: 0
+  - name: Sprites
+    uniqueID: 1751846375
     locked: 0

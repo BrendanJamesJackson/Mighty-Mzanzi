@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class laser_controller : MonoBehaviour
 {
+    public game_manager gm_script;
+
     private Rigidbody2D laser_rb;
     public float laser_speed = 10f;
+    public int laser_strength = 1;
 
     // Start is called before the first frame update
     void Start()
     {
         laser_rb = gameObject.GetComponent<Rigidbody2D>();
+        gm_script = GameObject.FindGameObjectWithTag("GameManager").GetComponent<game_manager>();
     }
 
     // Update is called once per frame
@@ -19,9 +23,20 @@ public class laser_controller : MonoBehaviour
         laser_rb.velocity = new Vector2(laser_speed, 0f);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.tag == "Enemy")
+        {
+            if (gm_script.global_score_multiplier * laser_strength >= collision.GetComponent<enemy_controller>().GetHealth())
+            {
+                collision.GetComponent<enemy_controller>().enemyDie();
+            }
+            else
+            {
+                collision.GetComponent<enemy_controller>().SetHealth(collision.GetComponent<enemy_controller>().GetHealth() - (gm_script.global_score_multiplier * laser_strength));
+            }
+            Destroy(gameObject);
+        }
     }
 
     private void OnBecameInvisible()
