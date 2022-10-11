@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5520655830232942893}
   m_Layer: 0
   m_Name: Enemy_Chickenbot
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,8 +30,8 @@ Transform:
   m_GameObject: {fileID: 2250147838966829067}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8.2, y: -3.17, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.15, y: 1.15, z: 1.15}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2777cea56fafc104581b932c1e348792, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4
   outOfViewPoint: {fileID: 0}
 --- !u!114 &4165395074639470652
 MonoBehaviour:
@@ -114,6 +114,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bcc8c66824a3ea458a4f48642787cd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemy_health: 1
+  enemy_bonus: 15
+  gm_script: {fileID: 0}
 --- !u!70 &1764773997142069143
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -127,8 +130,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
+  m_Offset: {x: 0, y: -0.29440236}
+  m_Size: {x: 1, y: 1.867044}
   m_Direction: 0
 --- !u!95 &5520655830232942893
 Animator:

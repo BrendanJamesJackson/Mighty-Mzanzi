@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7621834003090821370}
   m_Layer: 0
   m_Name: Laser_Prefab
-  m_TagString: Untagged
+  m_TagString: laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -136,4 +136,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018069270c67e444fbbc8e61e422500d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gm_script: {fileID: 0}
   laser_speed: 10
+  laser_strength: 1
