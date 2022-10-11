@@ -29,10 +29,10 @@ public class player_upgrade : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       /* if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space))
         {
             EnableRapid();
-        }*/
+        }
 
         if (rapid_fire)
         {

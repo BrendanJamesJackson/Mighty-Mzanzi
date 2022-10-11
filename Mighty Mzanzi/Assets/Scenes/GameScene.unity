@@ -663,6 +663,7 @@ GameObject:
   - component: {fileID: 529192338}
   - component: {fileID: 529192339}
   - component: {fileID: 529192340}
+  - component: {fileID: 529192341}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -714,7 +715,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laser_prefab: {fileID: 8011434928668212076, guid: 77c22626d67e69948bbd870282ae428c, type: 3}
   shoot_pos: {fileID: 315194739}
-  cooldown: 0
+  cooldown: 0.5
+  rapid_cooldown: 0.1
+--- !u!114 &529192341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529192337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcb76ea7093987d4c87139745454cd1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ps_script: {fileID: 529192340}
+  rapid_fire: 0
+  duration_rapid: 3
+  duration_invincible: 0
+  duration_powerful: 0
 --- !u!1 &773433130
 GameObject:
   m_ObjectHideFlags: 0
