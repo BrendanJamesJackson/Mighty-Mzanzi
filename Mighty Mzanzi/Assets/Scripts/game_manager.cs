@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class game_manager : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class game_manager : MonoBehaviour
     private float score_timer;
 
     public int global_score_multiplier = 1;
+
+    public TextMeshProUGUI score_text;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +29,7 @@ public class game_manager : MonoBehaviour
             score_timer = 0f;
             player_score += score_increase;
         }
+        score_text.text = "Score: " + player_score;
     }
 
     public void EnemyBonus(int bonus)
