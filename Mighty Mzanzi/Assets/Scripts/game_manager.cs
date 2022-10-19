@@ -13,6 +13,8 @@ public class game_manager : MonoBehaviour
     public int global_score_multiplier = 1;
 
     public TextMeshProUGUI score_text;
+    public GameObject DeathScreen;
+    public TextMeshProUGUI finalscore_text;
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +31,7 @@ public class game_manager : MonoBehaviour
             score_timer = 0f;
             player_score += score_increase;
         }
-        score_text.text = "Score: " + player_score;
+        score_text.text = "Score: \n" + player_score;
     }
 
     public void EnemyBonus(int bonus)
@@ -40,5 +42,8 @@ public class game_manager : MonoBehaviour
     public void PlayerDie()
     {
         Debug.Log("dead");
+        Time.timeScale = 0;
+        finalscore_text.text = "You Were Defeated!!! \n Your Final Score Was: \n" + player_score;
+        DeathScreen.gameObject.SetActive(true);
     }
 }

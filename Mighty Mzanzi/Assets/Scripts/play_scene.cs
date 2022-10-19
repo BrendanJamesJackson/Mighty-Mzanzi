@@ -9,5 +9,6 @@ public class play_scene : MonoBehaviour
     public void LoadByIndex(int SceneIndex)
     {
         SceneManager.LoadScene(SceneIndex);
+        Time.timeScale = 1;
     }
 }
