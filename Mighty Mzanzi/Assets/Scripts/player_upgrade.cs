@@ -1,12 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class player_upgrade : MonoBehaviour
 {
     public player_shoot ps_script;
     public player_animation_controller pac_script;
     public player_controller pc_script;
+    public game_manager gm_script;
+
+    public GameObject glow;
+
+    public TextMeshProUGUI rapid_text;
+    public TextMeshProUGUI powerful_text;
+    public TextMeshProUGUI invincible_text;
+
 
     public bool rapid_fire = false;
     private bool invincible = false;
@@ -69,6 +78,9 @@ public class player_upgrade : MonoBehaviour
         // Visual indicator of upgrade
         ps_script.AdjustCooldown(rapid_fire);
         pac_script.SetRapid();
+        glow.SetActive(true);
+        rapid_text.color = new Color(1f, 1f, 1f, 1f);
+        rapid_text.color = Color.Lerp(rapid_text.color, new Color(1f,1f,1f,0f), 1);
     }
 
     public void DisableRapid()
@@ -79,6 +91,7 @@ public class player_upgrade : MonoBehaviour
         // Remove visual indicator of upgrade
         ps_script.AdjustCooldown(rapid_fire);
         pac_script.SetRapid();
+        glow.SetActive(false);
     }
 
     public void EnableInvincible()
@@ -86,6 +99,9 @@ public class player_upgrade : MonoBehaviour
         invincible = true;
         //Visual indicator of upgrade
         pc_script.SetInvincible();
+        glow.SetActive(true);
+        invincible_text.color = new Color(1f, 1f, 1f, 1f);
+        invincible_text.color = Color.Lerp(invincible_text.color, new Color(1f, 1f, 1f, 0f), 3f);
     }
 
     public void DisableInvincible()
@@ -93,13 +109,17 @@ public class player_upgrade : MonoBehaviour
         invincible = false;
         timer_invincible = duration_invincible;
         pc_script.SetInvincible();
-
+        glow.SetActive(false);
         // Remove visual indicator of upgrade
     }
 
     public void EnablePowerful()
     {
         powerful_lasers = true;
+        gm_script.global_score_multiplier = 3;
+        glow.SetActive(true);
+        powerful_text.color = new Color(1f, 1f, 1f, 1f);
+        powerful_text.color = Color.Lerp(powerful_text.color, new Color(1f, 1f, 1f, 0f), 3f);
         // Adjust laser strength
         // Visual indicator of upgrade
     }
@@ -108,6 +128,8 @@ public class player_upgrade : MonoBehaviour
     {
         powerful_lasers = false;
         timer_powerful = duration_powerful;
+        gm_script.global_score_multiplier = 1;
+        glow.SetActive(false);
         // Reset laser strength
         //Remove visual indicator of upgrade
     }

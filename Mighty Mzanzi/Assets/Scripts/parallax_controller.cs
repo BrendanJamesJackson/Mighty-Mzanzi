@@ -70,7 +70,7 @@ public class parallax_controller : MonoBehaviour
             GameObject temp_road = road;
             road = next_road;
             next_road = temp_road;
-            next_road.transform.position = new Vector2(road.transform.position.x + 20f, next_background.transform.position.y);
+            next_road.transform.position = new Vector2(road.transform.position.x + 19.2f, next_road.transform.position.y);
         }
 
     }
