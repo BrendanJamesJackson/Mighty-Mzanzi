@@ -15,11 +15,24 @@ public class game_manager : MonoBehaviour
     public TextMeshProUGUI score_text;
     public GameObject DeathScreen;
     public TextMeshProUGUI finalscore_text;
+    public GameObject Instructions;
+    public GameObject Pause_Menu;
 
     // Start is called before the first frame update
+
+    void Awake()
+    {
+        Time.timeScale = 0;
+    }
     void Start()
     {
         
+    }
+
+    public void BeginGame()
+    {
+        Instructions.SetActive(false);
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame
@@ -43,7 +56,24 @@ public class game_manager : MonoBehaviour
     {
         Debug.Log("dead");
         Time.timeScale = 0;
-        finalscore_text.text = "You Were Defeated!!! \n Your Final Score Was: \n" + player_score;
+        finalscore_text.text = "You Were Defeated!!! \n Score: \n" + player_score;
         DeathScreen.gameObject.SetActive(true);
+    }
+
+    public void PauseGame()
+    {
+        Time.timeScale = 0;
+        Pause_Menu.SetActive(true);
+    }
+
+    public void ResumeGame()
+    {
+        Pause_Menu.SetActive(false);
+        Time.timeScale = 1;
+    }
+
+    public void AudioEnable()
+    {
+        AudioListener.pause = !AudioListener.pause;
     }
 }

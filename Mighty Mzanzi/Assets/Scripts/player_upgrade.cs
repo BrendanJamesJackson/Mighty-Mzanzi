@@ -60,7 +60,7 @@ public class player_upgrade : MonoBehaviour
         }
     }
 
-    void EnableRapid()
+    public void EnableRapid()
     {
         rapid_fire = true;
         // Adjust shoot cooldown speed
@@ -68,7 +68,7 @@ public class player_upgrade : MonoBehaviour
         ps_script.AdjustCooldown(rapid_fire);
     }
 
-    void DisableRapid()
+    public void DisableRapid()
     {
         rapid_fire = false;
         timer_rapid = duration_rapid;
@@ -77,27 +77,27 @@ public class player_upgrade : MonoBehaviour
         ps_script.AdjustCooldown(rapid_fire);
     }
 
-    void EnableInvincible()
+    public void EnableInvincible()
     {
         invincible = true;
         //Visual indicator of upgrade
     }
 
-    void DisableInvincible()
+    public void DisableInvincible()
     {
         invincible = false;
         timer_invincible = duration_invincible;
         // Remove visual indicator of upgrade
     }
 
-    void EnablePowerful()
+    public void EnablePowerful()
     {
         powerful_lasers = true;
         // Adjust laser strength
         // Visual indicator of upgrade
     }
 
-    void DisablePowerful()
+    public void DisablePowerful()
     {
         powerful_lasers = false;
         timer_powerful = duration_powerful;

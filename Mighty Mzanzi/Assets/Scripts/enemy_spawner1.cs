@@ -13,6 +13,7 @@ public class enemy_spawner1 : MonoBehaviour
     public float spawnRate = 2f;
 
     public int enemy_types;
+    public int enemy_spawns;
     private int random_enemy;
 
     // Start is called before the first frame update
@@ -32,7 +33,14 @@ public class enemy_spawner1 : MonoBehaviour
         else
         {
             random_enemy = Random.Range(0, enemy_types);
-            Instantiate(enemies[random_enemy], spawnPoints[random_enemy].position, Quaternion.identity);
+            if (random_enemy == 0 || random_enemy == 1)
+            {
+                Instantiate(enemies[random_enemy], spawnPoints[0].position, Quaternion.identity);
+            }
+            else
+            {
+                Instantiate(enemies[random_enemy], spawnPoints[Random.Range(1, enemy_spawns)].position, Quaternion.identity);
+            }
             Debug.Log(random_enemy);
             timer = 0f;
         }        
