@@ -7,6 +7,8 @@ public class player_controller : MonoBehaviour
     public game_manager gm_script;
     public player_upgrade pu_script;
 
+    private bool invincible = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,9 +21,14 @@ public class player_controller : MonoBehaviour
         
     }
 
+    public void SetInvincible()
+    {
+        invincible = !invincible;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Enemy")
+        if (collision.tag == "Enemy" && !invincible)
         {
             gm_script.PlayerDie();
         }

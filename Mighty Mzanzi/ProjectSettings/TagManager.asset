@@ -8,6 +8,8 @@ TagManager:
   - laser
   - GameManager
   - rapidfire
+  - powerful
+  - invincible
   layers:
   - Default
   - TransparentFX

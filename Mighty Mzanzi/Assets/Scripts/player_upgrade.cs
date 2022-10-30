@@ -5,6 +5,8 @@ using UnityEngine;
 public class player_upgrade : MonoBehaviour
 {
     public player_shoot ps_script;
+    public player_animation_controller pac_script;
+    public player_controller pc_script;
 
     public bool rapid_fire = false;
     private bool invincible = false;
@@ -66,6 +68,7 @@ public class player_upgrade : MonoBehaviour
         // Adjust shoot cooldown speed
         // Visual indicator of upgrade
         ps_script.AdjustCooldown(rapid_fire);
+        pac_script.SetRapid();
     }
 
     public void DisableRapid()
@@ -75,18 +78,22 @@ public class player_upgrade : MonoBehaviour
         // Reset shoot cooldown speed
         // Remove visual indicator of upgrade
         ps_script.AdjustCooldown(rapid_fire);
+        pac_script.SetRapid();
     }
 
     public void EnableInvincible()
     {
         invincible = true;
         //Visual indicator of upgrade
+        pc_script.SetInvincible();
     }
 
     public void DisableInvincible()
     {
         invincible = false;
         timer_invincible = duration_invincible;
+        pc_script.SetInvincible();
+
         // Remove visual indicator of upgrade
     }
 

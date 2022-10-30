@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class player_shoot : MonoBehaviour
 {
+    public player_animation_controller pac_script;
+
     public GameObject laser_prefab;
     public Transform shoot_pos;
     public float cooldown;
@@ -44,6 +46,7 @@ public class player_shoot : MonoBehaviour
         {
             Instantiate(laser_prefab, shoot_pos.position, shoot_pos.rotation);
             timer = current_cooldown;
+            pac_script.ShootAnim();
         }
     }
 }

@@ -8,13 +8,25 @@ public class player_animation_controller : MonoBehaviour
 
     public bool upwards;
     public bool downwards;
+    public bool rapid;
 
     public Animator player_animator;
+    public Animator player_hair;
 
     // Start is called before the first frame update
     void Start()
     {
         
+    }
+
+    public void ShootAnim()
+    {
+        player_hair.SetTrigger("shoot");
+    }
+
+    public void SetRapid()
+    {
+        rapid = !rapid;
     }
 
     // Update is called once per frame
@@ -38,5 +50,6 @@ public class player_animation_controller : MonoBehaviour
 
         player_animator.SetBool("upwards",upwards);
         player_animator.SetBool("downwards", downwards);
+        player_hair.SetBool("rapid", rapid);
     }
 }

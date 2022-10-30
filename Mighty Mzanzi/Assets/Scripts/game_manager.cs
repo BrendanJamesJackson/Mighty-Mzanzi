@@ -29,6 +29,13 @@ public class game_manager : MonoBehaviour
         
     }
 
+    public void ShowInstructions()
+    {
+        Time.timeScale = 0;
+        Instructions.SetActive(true);
+
+    }
+
     public void BeginGame()
     {
         Instructions.SetActive(false);
