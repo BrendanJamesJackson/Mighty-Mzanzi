@@ -66,3 +66,6 @@ TagManager:
   - name: Sprites
     uniqueID: 1751846375
     locked: 0
+  - name: Loading Screen
+    uniqueID: 2951603595
+    locked: 0
