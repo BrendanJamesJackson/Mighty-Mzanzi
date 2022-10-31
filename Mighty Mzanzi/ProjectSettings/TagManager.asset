@@ -10,6 +10,7 @@ TagManager:
   - rapidfire
   - powerful
   - invincible
+  - obstacle
   layers:
   - Default
   - TransparentFX
@@ -17,8 +18,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - player
+  - laser
   - 
   - 
   - 
@@ -58,6 +59,9 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 142281449
+    locked: 0
+  - name: Obstacles
+    uniqueID: 3643159487
     locked: 0
   - name: Sprites
     uniqueID: 1751846375

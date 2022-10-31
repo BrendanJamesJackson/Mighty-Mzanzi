@@ -36,6 +36,7 @@ public class enemy_spawner1 : MonoBehaviour
             if (random_enemy == 0 || random_enemy == 1)
             {
                 Instantiate(enemies[random_enemy], spawnPoints[0].position, Quaternion.identity);
+                Debug.Log("enem"+random_enemy);
             }
             else
             {

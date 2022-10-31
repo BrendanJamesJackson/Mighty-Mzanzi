@@ -79,8 +79,7 @@ public class player_upgrade : MonoBehaviour
         ps_script.AdjustCooldown(rapid_fire);
         pac_script.SetRapid();
         glow.SetActive(true);
-        rapid_text.color = new Color(1f, 1f, 1f, 1f);
-        rapid_text.color = Color.Lerp(rapid_text.color, new Color(1f,1f,1f,0f), 1);
+        rapid_text.gameObject.SetActive(true);
     }
 
     public void DisableRapid()
@@ -92,6 +91,8 @@ public class player_upgrade : MonoBehaviour
         ps_script.AdjustCooldown(rapid_fire);
         pac_script.SetRapid();
         glow.SetActive(false);
+        rapid_text.gameObject.SetActive(false);
+
     }
 
     public void EnableInvincible()
@@ -102,6 +103,8 @@ public class player_upgrade : MonoBehaviour
         glow.SetActive(true);
         invincible_text.color = new Color(1f, 1f, 1f, 1f);
         invincible_text.color = Color.Lerp(invincible_text.color, new Color(1f, 1f, 1f, 0f), 3f);
+        invincible_text.gameObject.SetActive(true);
+
     }
 
     public void DisableInvincible()
@@ -110,6 +113,7 @@ public class player_upgrade : MonoBehaviour
         timer_invincible = duration_invincible;
         pc_script.SetInvincible();
         glow.SetActive(false);
+        invincible_text.gameObject.SetActive(false);
         // Remove visual indicator of upgrade
     }
 
@@ -120,6 +124,7 @@ public class player_upgrade : MonoBehaviour
         glow.SetActive(true);
         powerful_text.color = new Color(1f, 1f, 1f, 1f);
         powerful_text.color = Color.Lerp(powerful_text.color, new Color(1f, 1f, 1f, 0f), 3f);
+        powerful_text.gameObject.SetActive(true);
         // Adjust laser strength
         // Visual indicator of upgrade
     }
@@ -130,6 +135,7 @@ public class player_upgrade : MonoBehaviour
         timer_powerful = duration_powerful;
         gm_script.global_score_multiplier = 1;
         glow.SetActive(false);
+        powerful_text.gameObject.SetActive(false);
         // Reset laser strength
         //Remove visual indicator of upgrade
     }
