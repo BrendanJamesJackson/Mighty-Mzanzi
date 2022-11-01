@@ -11,6 +11,8 @@ TagManager:
   - powerful
   - invincible
   - obstacle
+  - barrier
+  - metal barrier
   layers:
   - Default
   - TransparentFX

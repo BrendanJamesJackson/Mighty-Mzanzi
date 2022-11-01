@@ -17,6 +17,8 @@ public class environment_movement : MonoBehaviour
     {
         transform.Translate(Vector3.left * speed * Time.deltaTime);
 
+        //Debug.Log("Enviro Move");
+
         if (gameObject.transform.position.x <= -15)
         {
             Destroy(gameObject);

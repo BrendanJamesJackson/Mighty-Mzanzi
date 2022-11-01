@@ -20,7 +20,15 @@ public class enemy_spawner1 : MonoBehaviour
     void Start()
     {
         random_enemy = Random.Range(0,enemy_types);
-        Instantiate(enemies[random_enemy], spawnPoints[random_enemy].position, Quaternion.identity);
+        if (random_enemy == 0 || random_enemy == 1)
+        {
+            Instantiate(enemies[random_enemy], spawnPoints[0].position, Quaternion.identity);
+            Debug.Log("enem" + random_enemy);
+        }
+        else
+        {
+            Instantiate(enemies[random_enemy], spawnPoints[Random.Range(1, enemy_spawns)].position, Quaternion.identity);
+        }
     }
 
     // Update is called once per frame

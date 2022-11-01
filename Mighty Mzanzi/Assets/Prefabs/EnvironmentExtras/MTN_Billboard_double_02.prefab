@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8785956160732260232}
   - component: {fileID: 6628140571655835350}
-  - component: {fileID: 1187204014548700130}
   m_Layer: 0
   m_Name: MTN_Billboard_double_02
   m_TagString: Untagged
@@ -26,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3782311309047570213}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.62, y: 0, z: -0.2}
+  m_LocalPosition: {x: 0, y: 0, z: -0.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -71,8 +70,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 142281449
-  m_SortingLayer: 4
+  m_SortingLayerID: -497576055
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 66a040c3c2d9a814cb39b3ef622176c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -85,19 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1187204014548700130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3782311309047570213}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 385acc109ae5c2c4abafd95ef2299e0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2.5
 --- !u!1 &4672248868859635594
 GameObject:
   m_ObjectHideFlags: 0
@@ -143,4 +129,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 385acc109ae5c2c4abafd95ef2299e0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2.5
+  speed: 2

@@ -17,6 +17,7 @@ public class enemy_movement : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.left * speed * Time.deltaTime);
+        //Debug.Log("Enem Move");
 
         if (gameObject.transform.position.x <= -9.55)
         {

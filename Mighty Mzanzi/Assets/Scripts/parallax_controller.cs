@@ -9,16 +9,19 @@ public class parallax_controller : MonoBehaviour
     public float speed_transitional;
     public float speed_midground;
     public float speed_road;
+    public float speed_barrier;
 
     public GameObject midground;
     public GameObject transitional;
     public GameObject background;
     public GameObject road;
+    public GameObject barrier;
 
     public GameObject next_background;
     public GameObject next_transitional;
     public GameObject next_midground;
     public GameObject next_road;
+    public GameObject next_barrier;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +43,11 @@ public class parallax_controller : MonoBehaviour
 
         road.gameObject.transform.Translate(Vector3.left * speed_road * Time.deltaTime);
         next_road.gameObject.transform.Translate(Vector3.left * speed_road * Time.deltaTime);
+
+        barrier.gameObject.transform.Translate(Vector3.left * speed_barrier * Time.deltaTime);
+        next_barrier.gameObject.transform.Translate(Vector3.left * speed_barrier * Time.deltaTime);
+
+        // Debug.Log("Parallax Move");
 
         if (midground.transform.position.x <= -48.7f)
         {
@@ -71,6 +79,22 @@ public class parallax_controller : MonoBehaviour
             road = next_road;
             next_road = temp_road;
             next_road.transform.position = new Vector2(road.transform.position.x + 19.2f, next_road.transform.position.y);
+        }
+
+        if (barrier.tag == "barrier" && barrier.transform.position.x <= -72f)
+        {
+            GameObject temp_barrier = barrier;
+            barrier = next_barrier;
+            next_barrier = temp_barrier;
+            next_barrier.transform.position = new Vector2(barrier.transform.position.x + 27.02f, next_barrier.transform.position.y);
+        }
+        
+        if (barrier.tag == "metal barrier" && barrier.transform.position.x <= -25f)
+        {
+            GameObject temp_barrier = barrier;
+            barrier = next_barrier;
+            next_barrier = temp_barrier;
+            next_barrier.transform.position = new Vector2(barrier.transform.position.x + 70.82f, next_barrier.transform.position.y);
         }
 
     }

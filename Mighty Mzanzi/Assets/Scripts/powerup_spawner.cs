@@ -15,7 +15,7 @@ public class powerup_spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        spawn_rate = Random.Range(10f, 25f);
+        spawn_rate = Random.Range(3f, 12f);
     }
 
     // Update is called once per frame
@@ -29,7 +29,7 @@ public class powerup_spawner : MonoBehaviour
         {
             random_pickup = Random.Range(0, pickup_types);
             Instantiate(powerups[random_pickup], spawnpoints[Random.Range(0, 4)].position, Quaternion.identity);
-            spawn_rate = Random.Range(10f, 25f);
+            spawn_rate = Random.Range(3f, 12f);
             timer = 0f;
         }
     }
