@@ -11,6 +11,11 @@ public class game_loader : MonoBehaviour
     public Image progressBar;
     private float target;
 
+    /*private void Start()
+    {
+        SceneManager.LoadScene(2, LoadSceneMode.Additive);
+    }*/
+
     private void Awake()
     {
         if (instance == null)
