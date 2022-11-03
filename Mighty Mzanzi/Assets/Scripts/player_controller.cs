@@ -28,7 +28,7 @@ public class player_controller : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Enemy" && !invincible)
+        if ((collision.tag == "Enemy" || collision.tag == "EnemyBullet") && !invincible)
         {
             gm_script.PlayerDie();
         }
