@@ -13,6 +13,7 @@ TagManager:
   - obstacle
   - barrier
   - metal barrier
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX
