@@ -49,12 +49,12 @@ public class parallax_controller : MonoBehaviour
 
         // Debug.Log("Parallax Move");
 
-        if (midground.transform.position.x <= -48.7f)
+        if (midground.transform.position.x <= -116.0f)
         {
             GameObject temp_midground = midground;
             midground = next_midground;
             next_midground = temp_midground;
-            next_midground.transform.position = new Vector2(midground.transform.position.x + 48.7f, next_midground.transform.position.y);
+            next_midground.transform.position = new Vector2(midground.transform.position.x + 112.5952f, next_midground.transform.position.y);
         }
 
         if (transitional.transform.position.x <= -48.7f)
