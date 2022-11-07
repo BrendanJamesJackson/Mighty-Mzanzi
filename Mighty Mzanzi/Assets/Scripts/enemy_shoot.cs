@@ -13,7 +13,9 @@ public class enemy_shoot : MonoBehaviour
     public GameObject bullet;
 
     public Transform bulletSP;
-    
+
+    public Animator shootanim;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +32,7 @@ public class enemy_shoot : MonoBehaviour
         else
         {
             Instantiate(bullet, bulletSP.position, Quaternion.identity);
+            shootanim.SetTrigger("shoot");
             timer = 0f;
             fireRate = Random.Range(minRate, maxRate);
         }
