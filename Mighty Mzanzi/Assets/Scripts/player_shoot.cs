@@ -15,6 +15,9 @@ public class player_shoot : MonoBehaviour
     private float timer;
     private float laser_strength;
 
+    public bool powerful = false;
+    public Sprite powerlaser;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,13 +43,23 @@ public class player_shoot : MonoBehaviour
         }
     }
 
+    public void SetPowerful()
+    {
+        powerful = !powerful;
+    }
+
     public void Shoot()
     {
         if (timer <= 0)
         {
-            Instantiate(laser_prefab, shoot_pos.position, shoot_pos.rotation);
+            GameObject tempshot = Instantiate(laser_prefab, shoot_pos.position, shoot_pos.rotation);
             timer = current_cooldown;
             pac_script.ShootAnim();
+
+            if (powerful)
+            {
+                tempshot.GetComponent<SpriteRenderer>().sprite = powerlaser;
+            }
         }
     }
 }

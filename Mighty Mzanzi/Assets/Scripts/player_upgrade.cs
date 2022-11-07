@@ -12,6 +12,7 @@ public class player_upgrade : MonoBehaviour
 
     public GameObject glow;
 
+
     public TextMeshProUGUI rapid_text;
     public TextMeshProUGUI powerful_text;
     public TextMeshProUGUI invincible_text;
@@ -98,11 +99,10 @@ public class player_upgrade : MonoBehaviour
     public void EnableInvincible()
     {
         invincible = true;
+        Debug.Log("invin");
         //Visual indicator of upgrade
         pc_script.SetInvincible();
         glow.SetActive(true);
-        invincible_text.color = new Color(1f, 1f, 1f, 1f);
-        invincible_text.color = Color.Lerp(invincible_text.color, new Color(1f, 1f, 1f, 0f), 3f);
         invincible_text.gameObject.SetActive(true);
 
     }
@@ -122,9 +122,8 @@ public class player_upgrade : MonoBehaviour
         powerful_lasers = true;
         gm_script.global_score_multiplier = 3;
         glow.SetActive(true);
-        powerful_text.color = new Color(1f, 1f, 1f, 1f);
-        powerful_text.color = Color.Lerp(powerful_text.color, new Color(1f, 1f, 1f, 0f), 3f);
         powerful_text.gameObject.SetActive(true);
+        ps_script.SetPowerful();
         // Adjust laser strength
         // Visual indicator of upgrade
     }
@@ -134,6 +133,7 @@ public class player_upgrade : MonoBehaviour
         powerful_lasers = false;
         timer_powerful = duration_powerful;
         gm_script.global_score_multiplier = 1;
+        ps_script.SetPowerful();
         glow.SetActive(false);
         powerful_text.gameObject.SetActive(false);
         // Reset laser strength

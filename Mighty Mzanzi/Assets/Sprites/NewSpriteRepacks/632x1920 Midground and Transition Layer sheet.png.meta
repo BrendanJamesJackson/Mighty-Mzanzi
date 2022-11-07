@@ -1,0 +1,543 @@
+fileFormatVersion: 2
+guid: 0d77322f920c6474ead1ef8629b44513
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 632x1920 Midground and Transition Layer sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5056
+        width: 1920
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce61292c2ea7d8f4095c11a45c8394e5
+      internalID: 1527922907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 632x1920 Midground and Transition Layer sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 5056
+        width: 1920
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b43d5ae03a7598843be0254b283a12c2
+      internalID: -1640929791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 632x1920 Midground and Transition Layer sheet_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4424
+        width: 1920
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0396f7b8a47a7a34dbece4d7c037a2aa
+      internalID: 1847795343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 632x1920 Midground and Transition Layer sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 4424
+        width: 1920
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b112d6bb1056429439eaf1ce86ad439d
+      internalID: 140725561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 632x1920 Midground and Transition Layer sheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3792
+        width: 1920
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65e01294facfe4142abb5975cca1381e
+      internalID: 1925727711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 632x1920 Midground and Transition Layer sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3792
+        width: 1920
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d09ab11408e8b49881bbeb0335a865
+      internalID: -813924812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 632x1920 Midground and Transition Layer sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3160
+        width: 1920
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a23411c3bef1d742bf2c5645bb4e7f8
+      internalID: -1403379532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 632x1920 Midground and Transition Layer sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3160
+        width: 1920
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 524262809dd528d46a2822405b99b6b2
+      internalID: 1653372243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 632x1920 Midground and Transition Layer sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2528
+        width: 1920
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fc2a61b18c7b13429817e185dea66ea
+      internalID: 1626806917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 632x1920 Midground and Transition Layer sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2528
+        width: 1920
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea6cc0b460a136f4e98bc92477e4daf5
+      internalID: -1412108607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 632x1920 Midground and Transition Layer sheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1896
+        width: 1920
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22be5df34b532894d8e4f5c69d420526
+      internalID: -1674800986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 632x1920 Midground and Transition Layer sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1896
+        width: 1920
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c7f8a7c1be40a4fa08cd82f2fef2d3
+      internalID: -550978356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 632x1920 Midground and Transition Layer sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1264
+        width: 1920
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de0012db55b9dff4f9938976be94a8cb
+      internalID: -1788617604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 632x1920 Midground and Transition Layer sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1264
+        width: 1920
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ffa0720206aa5b459bdd170247f3050
+      internalID: -1652960862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 632x1920 Midground and Transition Layer sheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 632
+        width: 1920
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebeac353538187048a414435b82cee29
+      internalID: -1170417448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 632x1920 Midground and Transition Layer sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 632
+        width: 1920
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c122ddd77903a4498838519dfc2bfaa
+      internalID: -1319430161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 632x1920 Midground and Transition Layer sheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1920
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2be9ec124b6f54d4889c987be072185e
+      internalID: -543911592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 632x1920 Midground and Transition Layer sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 1920
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a5f79dd45b244d458dfb4f3bfd680fa
+      internalID: -1784075370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      632x1920 Midground and Transition Layer sheet_14: -1170417448
+      632x1920 Midground and Transition Layer sheet_3: 140725561
+      632x1920 Midground and Transition Layer sheet_10: -1674800986
+      632x1920 Midground and Transition Layer sheet_0: 1527922907
+      632x1920 Midground and Transition Layer sheet_5: -813924812
+      632x1920 Midground and Transition Layer sheet_13: -1652960862
+      632x1920 Midground and Transition Layer sheet_1: -1640929791
+      632x1920 Midground and Transition Layer sheet_8: 1626806917
+      632x1920 Midground and Transition Layer sheet_11: -550978356
+      632x1920 Midground and Transition Layer sheet_15: -1319430161
+      632x1920 Midground and Transition Layer sheet_9: -1412108607
+      632x1920 Midground and Transition Layer sheet_6: -1403379532
+      632x1920 Midground and Transition Layer sheet_7: 1653372243
+      632x1920 Midground and Transition Layer sheet_2: 1847795343
+      632x1920 Midground and Transition Layer sheet_4: 1925727711
+      632x1920 Midground and Transition Layer sheet_12: -1788617604
+      632x1920 Midground and Transition Layer sheet_17: -1784075370
+      632x1920 Midground and Transition Layer sheet_16: -543911592
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

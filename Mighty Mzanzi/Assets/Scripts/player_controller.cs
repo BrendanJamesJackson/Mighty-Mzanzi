@@ -37,13 +37,15 @@ public class player_controller : MonoBehaviour
             pu_script.EnableRapid();
             Destroy(collision.gameObject);
         }
-        else if (collision.tag == "")
+        else if (collision.tag == "invincible")
         {
-
+            pu_script.EnableInvincible();
+            Destroy(collision.gameObject);
         }
-        else if (collision.tag == "")
+        else if (collision.tag == "powerful")
         {
-
+            pu_script.EnablePowerful();
+            Destroy(collision.gameObject);
         }
     }
 }
