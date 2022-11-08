@@ -5,6 +5,7 @@ using UnityEngine;
 public class laser_controller : MonoBehaviour
 {
     public game_manager gm_script;
+    public AudioSource enemy_death_audio;
 
     private Rigidbody2D laser_rb;
     public float laser_speed = 10f;
@@ -15,6 +16,7 @@ public class laser_controller : MonoBehaviour
     {
         laser_rb = gameObject.GetComponent<Rigidbody2D>();
         gm_script = GameObject.FindGameObjectWithTag("GameManager").GetComponent<game_manager>();
+        enemy_death_audio = GameObject.FindGameObjectWithTag("enemyaudio").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -30,6 +32,7 @@ public class laser_controller : MonoBehaviour
             if (gm_script.global_score_multiplier * laser_strength >= collision.GetComponent<enemy_controller>().GetHealth())
             {
                 collision.GetComponent<enemy_controller>().enemyDie();
+                enemy_death_audio.Play();
             }
             else
             {

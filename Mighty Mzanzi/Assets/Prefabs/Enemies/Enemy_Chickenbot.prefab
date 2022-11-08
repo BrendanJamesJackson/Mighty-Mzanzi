@@ -114,8 +114,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bcc8c66824a3ea458a4f48642787cd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy_health: 3
-  enemy_bonus: 5
+  enemy_health: 5
+  enemy_bonus: 10
   gm_script: {fileID: 0}
 --- !u!70 &1764773997142069143
 CapsuleCollider2D:

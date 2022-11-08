@@ -7,6 +7,8 @@ public class player_controller : MonoBehaviour
     public game_manager gm_script;
     public player_upgrade pu_script;
 
+    public AudioSource powerup_audio;
+
     private bool invincible = false;
 
     // Start is called before the first frame update
@@ -36,16 +38,19 @@ public class player_controller : MonoBehaviour
         {
             pu_script.EnableRapid();
             Destroy(collision.gameObject);
+            powerup_audio.Play();
         }
         else if (collision.tag == "invincible")
         {
             pu_script.EnableInvincible();
             Destroy(collision.gameObject);
+            powerup_audio.Play();
         }
         else if (collision.tag == "powerful")
         {
             pu_script.EnablePowerful();
             Destroy(collision.gameObject);
+            powerup_audio.Play();
         }
     }
 }
