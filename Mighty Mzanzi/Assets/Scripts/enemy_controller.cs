@@ -42,4 +42,9 @@ public class enemy_controller : MonoBehaviour
     {
         enemy_health = new_health;
     }
+
+    public void decHealthBar(int dmg)
+    {
+        
+    }
 }
