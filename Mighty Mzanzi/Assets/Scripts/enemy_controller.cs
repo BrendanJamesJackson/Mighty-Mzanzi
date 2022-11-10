@@ -9,6 +9,8 @@ public class enemy_controller : MonoBehaviour
     public int enemy_health;
     public int enemy_bonus;
 
+    private int max_health;
+
     public game_manager gm_script;
     private Image healthBar;
 
@@ -17,7 +19,7 @@ public class enemy_controller : MonoBehaviour
     {
         gm_script = GameObject.FindGameObjectWithTag("GameManager").GetComponent<game_manager>();
         healthBar = GetComponentInChildren<Image>(false);
-        
+        max_health = enemy_health;
     }
 
     private void Update()
@@ -43,8 +45,8 @@ public class enemy_controller : MonoBehaviour
         enemy_health = new_health;
     }
 
-    public void decHealthBar(int dmg)
+    public void decHealthBar()
     {
-        
+        healthBar.fillAmount -= enemy_health / max_health;
     }
 }

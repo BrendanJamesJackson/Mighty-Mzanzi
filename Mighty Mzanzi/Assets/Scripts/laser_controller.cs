@@ -30,13 +30,14 @@ public class laser_controller : MonoBehaviour
         if (collision.tag == "Enemy")
         {
             if (gm_script.global_score_multiplier * laser_strength >= collision.GetComponent<enemy_controller>().GetHealth())
-            {
+            {               
                 collision.GetComponent<enemy_controller>().enemyDie();
                 enemy_death_audio.Play();
             }
             else
             {
                 collision.GetComponent<enemy_controller>().SetHealth(collision.GetComponent<enemy_controller>().GetHealth() - (gm_script.global_score_multiplier * laser_strength));
+                collision.GetComponent<enemy_controller>().decHealthBar();
             }
             Destroy(gameObject);
         }
