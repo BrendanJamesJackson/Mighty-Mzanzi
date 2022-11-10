@@ -15,6 +15,7 @@ TagManager:
   - metal barrier
   - EnemyBullet
   - enemyaudio
+  - EnemyHealthBar
   layers:
   - Default
   - TransparentFX
