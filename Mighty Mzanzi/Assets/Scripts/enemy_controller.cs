@@ -10,6 +10,7 @@ public class enemy_controller : MonoBehaviour
     public int enemy_bonus;
 
     private int max_health;
+    private float healthBarVal = 1f;
 
     public game_manager gm_script;
     private Image healthBar;
@@ -47,6 +48,7 @@ public class enemy_controller : MonoBehaviour
 
     public void decHealthBar()
     {
-        healthBar.fillAmount -= enemy_health / max_health;
+        healthBarVal = (float)enemy_health / max_health;
+        healthBar.fillAmount = healthBarVal;
     }
 }
