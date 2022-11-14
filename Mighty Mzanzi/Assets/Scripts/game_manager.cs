@@ -18,6 +18,14 @@ public class game_manager : MonoBehaviour
     public GameObject Instructions;
     public GameObject Pause_Menu;
 
+    public GameObject left_input1;
+    public GameObject left_input2;
+    public GameObject right_input1;
+    public GameObject right_input2;
+    public GameObject hair;
+
+    public Animator player_anim;
+
     // Start is called before the first frame update
 
     void Awake()
@@ -62,11 +70,28 @@ public class game_manager : MonoBehaviour
     public void PlayerDie()
     {
         Debug.Log("dead");
-        Time.timeScale = 0;
         finalscore_text.text = "You Were Defeated!!! \n Score: \n" + player_score;
-        DeathScreen.gameObject.SetActive(true);
+        left_input1.SetActive(false);
+        left_input2.SetActive(false);
+        right_input1.SetActive(false);
+        right_input2.SetActive(false);
+        GameObject[] enems = GameObject.FindGameObjectsWithTag("Enemy");
+        for (int i=0;i<enems.Length;i++)
+        {
+            enems[i].SetActive(false);
+        }
+        hair.SetActive(false);
+        player_anim.SetTrigger("die");
+        StartCoroutine(wait()); 
+        
     }
 
+    IEnumerator wait()
+    {
+        yield return new WaitForSecondsRealtime(1.5f);
+        Time.timeScale = 0;
+        DeathScreen.gameObject.SetActive(true);
+    }
     public void PauseGame()
     {
         Time.timeScale = 0;

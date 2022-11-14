@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0d77322f920c6474ead1ef8629b44513
+guid: 3cf953615862c1f4f9f12d0d4b304cb8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -67,7 +67,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -129,379 +129,421 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 632x1920 Midground and Transition Layer sheet_0
+      name: 256x256 Defeat sheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 5058
-        width: 1920
-        height: 630
+        y: 1275
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce61292c2ea7d8f4095c11a45c8394e5
-      internalID: 1527922907
+      spriteID: c6840687d471ccd499f0bd442326522f
+      internalID: -591751898
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 632x1920 Midground and Transition Layer sheet_1
+      name: 256x256 Defeat sheet_1
       rect:
         serializedVersion: 2
-        x: 1920
-        y: 5058
-        width: 1920
-        height: 630
+        x: 256
+        y: 1275
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b43d5ae03a7598843be0254b283a12c2
-      internalID: -1640929791
+      spriteID: b3e09835bb0003948b179efcdc536e83
+      internalID: -1447429359
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 632x1920 Midground and Transition Layer sheet_2
+      name: 256x256 Defeat sheet_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1275
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63da3b6bad91db44aa50ae84910e1c15
+      internalID: -1556722753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 256x256 Defeat sheet_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1275
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb76c42654870f4a8caa8ee9bee99e1
+      internalID: -1499492359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 256x256 Defeat sheet_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 4428
-        width: 1920
-        height: 627
+        y: 1020
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 11}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 2, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0396f7b8a47a7a34dbece4d7c037a2aa
-      internalID: 1847795343
+      spriteID: ac6c6c5ff12db694eba3821ea74caba6
+      internalID: -695208927
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 632x1920 Midground and Transition Layer sheet_3
+      name: 256x256 Defeat sheet_5
       rect:
         serializedVersion: 2
-        x: 1920
-        y: 4428
-        width: 1920
-        height: 625
+        x: 256
+        y: 1022
+        width: 256
+        height: 253
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 8}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b112d6bb1056429439eaf1ce86ad439d
-      internalID: 140725561
+      spriteID: b1888aa5aa2df5742baf7855f73d3571
+      internalID: 732565272
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 632x1920 Midground and Transition Layer sheet_4
+      name: 256x256 Defeat sheet_6
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1019
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 090f4031882bbbc4b8d3eaea6193a736
+      internalID: 2135457089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 256x256 Defeat sheet_7
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1019
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a30ce8e227704be44bfd200d735e9085
+      internalID: 1806213779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 256x256 Defeat sheet_8
       rect:
         serializedVersion: 2
         x: 0
-        y: 3798
-        width: 1920
-        height: 622
+        y: 763
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65e01294facfe4142abb5975cca1381e
-      internalID: 1925727711
+      spriteID: 43b80a74a8ff0d4449da747ee89c5a3b
+      internalID: -1622726828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 632x1920 Midground and Transition Layer sheet_5
+      name: 256x256 Defeat sheet_9
       rect:
         serializedVersion: 2
-        x: 1920
-        y: 3798
-        width: 1920
-        height: 617
+        x: 255
+        y: 763
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05d09ab11408e8b49881bbeb0335a865
-      internalID: -813924812
+      spriteID: f35544c5f31cd7048a0a54113b0319f3
+      internalID: 924702615
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 632x1920 Midground and Transition Layer sheet_6
+      name: 256x256 Defeat sheet_10
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 763
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aba13bb616c22dc44810b330c984c1d7
+      internalID: -2105296309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 256x256 Defeat sheet_11
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 763
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14e49698d3c529141b8fc2e170318e09
+      internalID: 205826314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 256x256 Defeat sheet_12
       rect:
         serializedVersion: 2
         x: 0
-        y: 3168
-        width: 1920
-        height: 620
+        y: 507
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a23411c3bef1d742bf2c5645bb4e7f8
-      internalID: -1403379532
+      spriteID: 0f16f6fb459d1214c9347c3442636dfb
+      internalID: -547457844
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 632x1920 Midground and Transition Layer sheet_7
+      name: 256x256 Defeat sheet_13
       rect:
         serializedVersion: 2
-        x: 1920
-        y: 3168
-        width: 1920
-        height: 626
+        x: 256
+        y: 507
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 11}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 524262809dd528d46a2822405b99b6b2
-      internalID: 1653372243
+      spriteID: 51cb1d32fe63ea348ac5cea4598c055d
+      internalID: -925025053
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 632x1920 Midground and Transition Layer sheet_8
+      name: 256x256 Defeat sheet_14
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 507
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7c5594c8dc40d43839e174bf11add0
+      internalID: -788979605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 256x256 Defeat sheet_15
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 507
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75aa9e7c1389f8f4eabd2114cde6669b
+      internalID: -90044848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 256x256 Defeat sheet_16
       rect:
         serializedVersion: 2
         x: 0
-        y: 2538
-        width: 1920
-        height: 615
+        y: 251
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9e6185c8693c5840893896c6b736417
-      internalID: 1626806917
+      spriteID: 5ca7fd147d625d7438ce13d71703b793
+      internalID: 750815432
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 632x1920 Midground and Transition Layer sheet_9
+      name: 256x256 Defeat sheet_17
       rect:
         serializedVersion: 2
-        x: 1920
-        y: 2538
-        width: 1920
-        height: 618
+        x: 256
+        y: 251
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bc788242f135e34480e2c818bdffbf8
-      internalID: -1412108607
+      spriteID: 9a1456ec5d2329448b577de8be2fe38d
+      internalID: 2113254387
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 632x1920 Midground and Transition Layer sheet_10
+      name: 256x256 Defeat sheet_18
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1908
-        width: 1920
-        height: 611
+        x: 512
+        y: 251
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8d1166d2b795bf4793cc752d72223c9
-      internalID: -1674800986
+      spriteID: 2dcdd83f83268e647af086cdbaa804db
+      internalID: -1535962814
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 632x1920 Midground and Transition Layer sheet_11
+      name: 256x256 Defeat sheet_19
       rect:
         serializedVersion: 2
-        x: 1920
-        y: 1908
-        width: 1920
-        height: 617
+        x: 768
+        y: 251
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7bf4adf3ce401504e99bff9258e7ef88
-      internalID: -550978356
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 632x1920 Midground and Transition Layer sheet_12
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1278
-        width: 1920
-        height: 614
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 92cb8a8947c5c9247adcfa45313990b4
-      internalID: -1788617604
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 632x1920 Midground and Transition Layer sheet_13
-      rect:
-        serializedVersion: 2
-        x: 1920
-        y: 1278
-        width: 1920
-        height: 617
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 650ac4eed99e7474c92c070c3f7cab57
-      internalID: -1652960862
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 632x1920 Midground and Transition Layer sheet_14
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 644
-        width: 1920
-        height: 617
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c670e7344697ee945bd767c658fdbded
-      internalID: -1170417448
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 632x1920 Midground and Transition Layer sheet_15
-      rect:
-        serializedVersion: 2
-        x: 1920
-        y: 648
-        width: 1920
-        height: 612
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a023521b7a1d7dd45b4a306b747e2682
-      internalID: -1319430161
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 632x1920 Midground and Transition Layer sheet_16
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 18
-        width: 1920
-        height: 609
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 4}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 05bfc17a453a73144af869a6889d77ed
-      internalID: -543911592
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 632x1920 Midground and Transition Layer sheet_17
-      rect:
-        serializedVersion: 2
-        x: 1920
-        y: 18
-        width: 1920
-        height: 601
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f157d1b2163ab9d49af3f70387c2e2f0
-      internalID: -1784075370
+      spriteID: 828d09bc11797ff4a9f056684a3ace2d
+      internalID: 1069882615
       vertices: []
       indices: 
       edges: []
@@ -517,24 +559,26 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      632x1920 Midground and Transition Layer sheet_14: -1170417448
-      632x1920 Midground and Transition Layer sheet_3: 140725561
-      632x1920 Midground and Transition Layer sheet_10: -1674800986
-      632x1920 Midground and Transition Layer sheet_0: 1527922907
-      632x1920 Midground and Transition Layer sheet_5: -813924812
-      632x1920 Midground and Transition Layer sheet_13: -1652960862
-      632x1920 Midground and Transition Layer sheet_1: -1640929791
-      632x1920 Midground and Transition Layer sheet_8: 1626806917
-      632x1920 Midground and Transition Layer sheet_11: -550978356
-      632x1920 Midground and Transition Layer sheet_15: -1319430161
-      632x1920 Midground and Transition Layer sheet_9: -1412108607
-      632x1920 Midground and Transition Layer sheet_6: -1403379532
-      632x1920 Midground and Transition Layer sheet_7: 1653372243
-      632x1920 Midground and Transition Layer sheet_2: 1847795343
-      632x1920 Midground and Transition Layer sheet_4: 1925727711
-      632x1920 Midground and Transition Layer sheet_12: -1788617604
-      632x1920 Midground and Transition Layer sheet_17: -1784075370
-      632x1920 Midground and Transition Layer sheet_16: -543911592
+      256x256 Defeat sheet_5: 732565272
+      256x256 Defeat sheet_7: 1806213779
+      256x256 Defeat sheet_6: 2135457089
+      256x256 Defeat sheet_12: -547457844
+      256x256 Defeat sheet_4: -695208927
+      256x256 Defeat sheet_0: -591751898
+      256x256 Defeat sheet_16: 750815432
+      256x256 Defeat sheet_13: -925025053
+      256x256 Defeat sheet_2: -1556722753
+      256x256 Defeat sheet_15: -90044848
+      256x256 Defeat sheet_1: -1447429359
+      256x256 Defeat sheet_17: 2113254387
+      256x256 Defeat sheet_14: -788979605
+      256x256 Defeat sheet_19: 1069882615
+      256x256 Defeat sheet_9: 924702615
+      256x256 Defeat sheet_8: -1622726828
+      256x256 Defeat sheet_18: -1535962814
+      256x256 Defeat sheet_11: 205826314
+      256x256 Defeat sheet_10: -2105296309
+      256x256 Defeat sheet_3: -1499492359
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
