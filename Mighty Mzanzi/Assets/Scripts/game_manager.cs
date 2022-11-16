@@ -70,7 +70,7 @@ public class game_manager : MonoBehaviour
     public void PlayerDie()
     {
         Debug.Log("dead");
-        finalscore_text.text = "You Were Defeated!!! \n Score: \n" + player_score;
+        
         left_input1.SetActive(false);
         left_input2.SetActive(false);
         right_input1.SetActive(false);
@@ -90,6 +90,7 @@ public class game_manager : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(1.5f);
         Time.timeScale = 0;
+        finalscore_text.text = "You Were Defeated!!! \n Score: \n" + player_score;
         DeathScreen.gameObject.SetActive(true);
     }
     public void PauseGame()
