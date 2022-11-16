@@ -18,9 +18,9 @@ public class enemy_controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gm_script = GameObject.FindGameObjectWithTag("GameManager").GetComponent<game_manager>();
-        healthBar = GetComponentInChildren<Image>(false);
+        gm_script = GameObject.FindGameObjectWithTag("GameManager").GetComponent<game_manager>();        
         max_health = enemy_health;
+        healthBar = GetComponentInChildren<Image>(false);
     }
 
     private void Update()
