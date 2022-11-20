@@ -23,6 +23,8 @@ public class parallax_controller : MonoBehaviour
     public GameObject next_road;
     public GameObject next_barrier;
 
+    public game_manager gm_script;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,20 +34,20 @@ public class parallax_controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        midground.gameObject.transform.Translate(Vector3.left * speed_midground * Time.deltaTime);
-        next_midground.gameObject.transform.Translate(Vector3.left * speed_midground * Time.deltaTime);
+        midground.gameObject.transform.Translate(Vector3.left * speed_midground * Time.deltaTime * gm_script.global_world_speed);
+        next_midground.gameObject.transform.Translate(Vector3.left * speed_midground * Time.deltaTime * gm_script.global_world_speed);
 
-        transitional.gameObject.transform.Translate(Vector3.left * speed_transitional * Time.deltaTime);
-        next_transitional.gameObject.transform.Translate(Vector3.left * speed_transitional * Time.deltaTime);
+        transitional.gameObject.transform.Translate(Vector3.left * speed_transitional * Time.deltaTime * gm_script.global_world_speed);
+        next_transitional.gameObject.transform.Translate(Vector3.left * speed_transitional * Time.deltaTime * gm_script.global_world_speed);
 
-        background.gameObject.transform.Translate(Vector3.left * speed_background * Time.deltaTime);
-        next_background.gameObject.transform.Translate(Vector3.left * speed_background * Time.deltaTime);
+        background.gameObject.transform.Translate(Vector3.left * speed_background * Time.deltaTime * gm_script.global_world_speed);
+        next_background.gameObject.transform.Translate(Vector3.left * speed_background * Time.deltaTime * gm_script.global_world_speed);
 
-        road.gameObject.transform.Translate(Vector3.left * speed_road * Time.deltaTime);
-        next_road.gameObject.transform.Translate(Vector3.left * speed_road * Time.deltaTime);
+        road.gameObject.transform.Translate(Vector3.left * speed_road * Time.deltaTime * gm_script.global_world_speed);
+        next_road.gameObject.transform.Translate(Vector3.left * speed_road * Time.deltaTime * gm_script.global_world_speed);
 
-        barrier.gameObject.transform.Translate(Vector3.left * speed_barrier * Time.deltaTime);
-        next_barrier.gameObject.transform.Translate(Vector3.left * speed_barrier * Time.deltaTime);
+        barrier.gameObject.transform.Translate(Vector3.left * speed_barrier * Time.deltaTime * gm_script.global_world_speed);
+        next_barrier.gameObject.transform.Translate(Vector3.left * speed_barrier * Time.deltaTime * gm_script.global_world_speed);
 
         // Debug.Log("Parallax Move");
 

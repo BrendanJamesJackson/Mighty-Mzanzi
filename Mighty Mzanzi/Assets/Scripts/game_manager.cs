@@ -11,6 +11,7 @@ public class game_manager : MonoBehaviour
     private float score_timer;
 
     public int global_score_multiplier = 1;
+    public int global_world_speed = 1;
 
     public TextMeshProUGUI score_text;
     public GameObject DeathScreen;
@@ -23,8 +24,14 @@ public class game_manager : MonoBehaviour
     public GameObject right_input1;
     public GameObject right_input2;
     public GameObject hair;
+    public GameObject Pause_button;
+    public GameObject Help_button;
+    public GameObject Score_label;
+    public AudioSource game_music;
 
     public Animator player_anim;
+
+    public player_movement pm_script;
 
     // Start is called before the first frame update
 
@@ -81,14 +88,20 @@ public class game_manager : MonoBehaviour
             enems[i].SetActive(false);
         }
         hair.SetActive(false);
+        Pause_button.SetActive(false);
+        Help_button.SetActive(false);
+        Score_label.SetActive(false);
+        game_music.Stop();
+        pm_script.DieFall();
         player_anim.SetTrigger("die");
+        global_world_speed = 0;
         StartCoroutine(wait()); 
         
     }
 
     IEnumerator wait()
     {
-        yield return new WaitForSecondsRealtime(1.5f);
+        yield return new WaitForSecondsRealtime(3f);
         Time.timeScale = 0;
         finalscore_text.text = "You Were Defeated!!! \n Score: \n" + player_score;
         DeathScreen.gameObject.SetActive(true);

@@ -36,4 +36,9 @@ public class player_movement : MonoBehaviour
     {
 
     }
+
+    public void DieFall()
+    {
+        player_rb.AddForce(new Vector2(0, -jump_force), ForceMode2D.Force);
+    }
 }

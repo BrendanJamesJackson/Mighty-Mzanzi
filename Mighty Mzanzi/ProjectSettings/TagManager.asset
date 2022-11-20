@@ -74,3 +74,6 @@ TagManager:
   - name: Loading Screen
     uniqueID: 2951603595
     locked: 0
+  - name: Rotate
+    uniqueID: 2216580361
+    locked: 0
