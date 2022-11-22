@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
 
-public class game_manager : MonoBehaviour
+public class game_manager : Singleton<game_manager>
 {
     public int player_score;
     public int score_interval;
@@ -33,15 +34,49 @@ public class game_manager : MonoBehaviour
 
     public player_movement pm_script;
 
+    [SerializeField]
+    private PenroseAPIManager penroseAPIManager;
+    public PenroseAPIManager PenroseAPIManager { get => penroseAPIManager;}
+    public bool IsValidUser { get => isValidUser;}
+    private bool isValidUser = false;
+
+    [SerializeField]
+    private TestCall testCall;
+
+    private string Unique_id;
+    private string Game_id;
+
+    public TextMeshProUGUI test;
+
     // Start is called before the first frame update
 
-    void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         Time.timeScale = 0;
+        PenroseAPIBridge.GetUrlParameters();
+
+        Debug.Log($"{PenroseAPIBridge.UniqueId} -- {PenroseAPIBridge.GameId}");
+
+        penroseAPIManager.TryCheckUsername(OnSuccessfulCheckUsername, onFailCheckUsername);
     }
+
+    private void onFailCheckUsername(string obj)
+    {
+        isValidUser = false;
+        // TODO: let the player know that they are not a valid user
+    }
+
+    private void OnSuccessfulCheckUsername(string obj)
+    {
+        isValidUser = true;
+    }
+
     void Start()
     {
         Time.timeScale = 0;
+
+        
     }
 
     public void ShowInstructions()
@@ -53,6 +88,10 @@ public class game_manager : MonoBehaviour
 
     public void BeginGame()
     {
+        if (!isValidUser)
+        {
+            return;
+        }
         Instructions.SetActive(false);
         Time.timeScale = 1;
     }
@@ -95,15 +134,34 @@ public class game_manager : MonoBehaviour
         pm_script.DieFall();
         player_anim.SetTrigger("die");
         global_world_speed = 0;
-        StartCoroutine(wait()); 
+        StartCoroutine(wait());
+
         
+        
+        
+    }
+
+    private void onFailPostScore(string obj)
+    {
+        Debug.Log("failed to post score");
+        //TODO: display modal stating that there was a connection error
+    }
+
+    private void onSuccessfulPostScore(string obj)
+    {
+        Debug.Log("successful to post score");
+        //TODO: display modal stating that the score was uploaded, and restart the game
     }
 
     IEnumerator wait()
     {
         yield return new WaitForSecondsRealtime(3f);
+
         Time.timeScale = 0;
         finalscore_text.text = "You Were Defeated!!! \n Score: \n" + player_score;
+        penroseAPIManager.TryPostScore(player_score, onSuccessfulPostScore, onFailPostScore);
+        // TODO: Possible need to set up loading screen whilst the score is being sent if servers are full, for whatever reasone
+        
         DeathScreen.gameObject.SetActive(true);
     }
     public void PauseGame()
