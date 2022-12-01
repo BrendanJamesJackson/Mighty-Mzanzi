@@ -94,11 +94,37 @@ public static class PenroseAPIBridge
         form.AddField("unique_id", UniqueId);
         form.AddField("score", score);
         form.AddField("game_id", GameId);
+        
+        Debug.Log($"unique_id: {UniqueId}");
+        Debug.Log($"score: {score}");
+        Debug.Log($"game_id: {GameId}");
+        
+        /*
+         * Access-Control-Allow-Origin:  http://127.0.0.1:3000
+Access-Control-Allow-Methods: POST
+Access-Control-Allow-Headers: Content-Type, Authorization
+public void SetRequestHeader(string name, string value); 
+         */
+        
 
         using (UnityWebRequest webRequest = UnityWebRequest.Post(SEND_SCORE, form))
         {
-            yield return webRequest.SendWebRequest();
 
+            var origin = webRequest.GetRequestHeader("Origin");
+            Debug.Log($"Origin: {origin}");
+            webRequest.SetRequestHeader("Access-Control-Allow-Credentials","true");
+            webRequest.SetRequestHeader("Access-Control-Allow-Headers", "Accept, X-Access-Token, X-Application-Name, X-Request-Sent-Time");
+            webRequest.SetRequestHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+            webRequest.SetRequestHeader("Access-Control-Allow-Origin", "*");
+            var set = webRequest.GetRequestHeader("Access-Control-Allow-Origin");
+            Debug.Log("ACAO: "+set);
+           /* webRequest.SetRequestHeader("Access-Control-Allow-Methods", 
+                new [] {"POST", "GET"}.ToString());
+            webRequest.SetRequestHeader("Access-Control-Allow-Headers", 
+                new [] {"Content-Type, Authorization"}.ToString());*/
+            
+            yield return webRequest.SendWebRequest();
+            Debug.Log($"Request {webRequest.url}");
             if (webRequest.result != UnityWebRequest.Result.Success)
             {
                 Debug.LogError($"Failed to post score: {webRequest.error}");
