@@ -9,14 +9,19 @@ using ScreenOrientation = MarksAssets.ScreenOrientationWebGL.ScreenOrientationWe
 
 public class orientation : MonoBehaviour
 {
-   /* private void Start()
-    {
-        SetOrientation();
-        Debug.Log("orientation");
-    }
+   
 
-    [DllImport("__Internal")]
-    public static extern void SetOrientation();*/
+ 
+    /* private void Start()
+     {
+         SetOrientation();
+         Debug.Log("orientation");
+     }
+
+     [DllImport("__Internal")]
+     public static extern void SetOrientation();*/
+
+    
 
     public GameObject rotate_img;
     public AudioSource music;
@@ -30,9 +35,28 @@ public class orientation : MonoBehaviour
         
     }
 
+    public void CheckOrientation()
+    {
+        if (GetOrientation.OrientStatus() && portrait)
+        {
+            rotate_img.SetActive(false);
+            Time.timeScale = 1;
+            portrait = false;
+        }
+        else if (!GetOrientation.OrientStatus())
+        {
+            Time.timeScale = 0;
+            rotate_img.SetActive(true);
+            portrait = true;
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
+        CheckOrientation();
+
+
         /*if (Input.deviceOrientation == DeviceOrientation.Portrait || Input.deviceOrientation == DeviceOrientation.PortraitUpsideDown)
         {
             Time.timeScale = 0;
@@ -47,7 +71,7 @@ public class orientation : MonoBehaviour
         }*/
     }
 
-    public void OrientCheck(int orient)
+    /*public void OrientCheck(int orient)
     {
         //int orient;
         ScreenOrientation orientation = (ScreenOrientation)orient;
@@ -67,5 +91,5 @@ public class orientation : MonoBehaviour
             music.Play();
         }
         
-    }
+    }*/
 }
