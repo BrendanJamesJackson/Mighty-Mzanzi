@@ -7,8 +7,14 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/MarksAssets/ScreenOrientationWebGL/Scripts/ScreenOrientationWebGL.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="Toolset" />
   </component>
   <component name="ProjectId" id="2HuLqfiSXZfzyMgRJOESvhc0SqI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -22,6 +28,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -75,6 +82,12 @@
       <workItem from="1669638488241" duration="4480000" />
       <workItem from="1669706180199" duration="270000" />
       <workItem from="1669887554912" duration="172000" />
+      <workItem from="1670226900685" duration="5410000" />
+      <workItem from="1670321579161" duration="302000" />
+      <workItem from="1670509164432" duration="4814000" />
+      <workItem from="1670838853308" duration="6936000" />
+      <workItem from="1671006140576" duration="2130000" />
+      <workItem from="1671107951222" duration="7260000" />
     </task>
     <servers />
   </component>

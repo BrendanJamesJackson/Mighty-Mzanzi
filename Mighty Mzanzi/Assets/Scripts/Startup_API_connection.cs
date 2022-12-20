@@ -26,7 +26,7 @@ public class Startup_API_connection : MonoBehaviour
 
     [SerializeField] private bool useFakeId = false;
     
-#if DEVELOPMENT_BUILD
+#if DEVELOPMENT_BUILD || UNITY_EDITOR
     const string FAKE_ID = "f6f56f6-1139212-d2c71d7d-e297f8-bb71";
 #endif
     
@@ -52,7 +52,7 @@ public class Startup_API_connection : MonoBehaviour
         Debug.Log($"UseFakeID: {useFakeId}");
         if (useFakeId)
         {
-#if DEVELOPMENT_BUILD
+#if DEVELOPMENT_BUILD || UNITY_EDITOR
             isValidUser = PenroseAPIBridge.UniqueId == FAKE_ID;
             Debug.Log($"{PenroseAPIBridge.UniqueId} -- {FAKE_ID}");
 #endif
